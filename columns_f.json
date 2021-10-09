@@ -1,0 +1,3344 @@
+{
+    "securities": {
+        "SECID": {
+            "type": "string",
+            "bytes": 36,
+            "max_size": 0,
+            "info": {
+                "id": 2060,
+                "name": "SECID",
+                "short_title": "Код инструмента",
+                "title": "Идентификатор финансового инструмента",
+                "is_ordered": 1,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "SHORTNAME": {
+            "type": "string",
+            "bytes": 30,
+            "max_size": 0,
+            "info": {
+                "id": 2043,
+                "name": "SHORTNAME",
+                "short_title": "Кратк. наим.",
+                "title": "Краткое наименование ценной бумаги",
+                "is_ordered": 1,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 1
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "LOTSIZE": {
+            "type": "int32",
+            "info": {
+                "id": 2049,
+                "name": "LOTSIZE",
+                "short_title": "Размер лота",
+                "title": "Размер лота в единицах ценных бумаг, штук",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "FACEVALUE": {
+            "type": "double",
+            "info": {
+                "id": 2051,
+                "name": "FACEVALUE",
+                "short_title": "Номинал",
+                "title": "Номинал",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "BOARDNAME": {
+            "type": "string",
+            "bytes": 381,
+            "max_size": 0,
+            "info": {
+                "id": 855,
+                "name": "BOARDNAME",
+                "short_title": "Режим торгов",
+                "title": "Режим торгов",
+                "is_ordered": 1,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "BOARDID": {
+            "type": "string",
+            "bytes": 12,
+            "max_size": 0,
+            "info": {
+                "id": 2059,
+                "name": "BOARDID",
+                "short_title": "Код режима",
+                "title": "Идентификатор режима торгов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "STATUS": {
+            "type": "string",
+            "bytes": 3,
+            "max_size": 0,
+            "info": {
+                "id": 2044,
+                "name": "STATUS",
+                "short_title": "Статус",
+                "title": "Статус",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "DECIMALS": {
+            "type": "int32",
+            "info": {
+                "id": 2054,
+                "name": "DECIMALS",
+                "short_title": "Точность",
+                "title": "Точность, знаков после запятой",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "SECNAME": {
+            "type": "string",
+            "bytes": 90,
+            "max_size": 0,
+            "info": {
+                "id": 2041,
+                "name": "SECNAME",
+                "short_title": "Наименование",
+                "title": "Наименование финансового инструмента",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "REMARKS": {
+            "type": "string",
+            "bytes": 24,
+            "max_size": 0,
+            "info": {
+                "id": 2042,
+                "name": "REMARKS",
+                "short_title": "Примечание",
+                "title": "Примечание",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "MARKETCODE": {
+            "type": "string",
+            "bytes": 12,
+            "max_size": 0,
+            "info": {
+                "id": 2046,
+                "name": "MARKETCODE",
+                "short_title": "Рынок",
+                "title": "Рынок",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "INSTRID": {
+            "type": "string",
+            "bytes": 12,
+            "max_size": 0,
+            "info": {
+                "id": 2047,
+                "name": "INSTRID",
+                "short_title": "Группа инструментов",
+                "title": "Группа инструментов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "SECTORID": {
+            "type": "string",
+            "bytes": 12,
+            "max_size": 0,
+            "info": {
+                "id": 2048,
+                "name": "SECTORID",
+                "short_title": "Сектор",
+                "title": "Сектор (Устарело)",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "MINSTEP": {
+            "type": "double",
+            "info": {
+                "id": 2050,
+                "name": "MINSTEP",
+                "short_title": "Мин. шаг цены",
+                "title": "Мин. шаг цены",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "FACEUNIT": {
+            "type": "string",
+            "bytes": 12,
+            "max_size": 0,
+            "info": {
+                "id": 2052,
+                "name": "FACEUNIT",
+                "short_title": "Валюта номинала",
+                "title": "Валюта номинала",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "PREVDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 2053,
+                "name": "PREVDATE",
+                "short_title": "Дата последних торгов",
+                "title": "Дата предыдущего торгового дня",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "ISIN": {
+            "type": "string",
+            "bytes": 36,
+            "max_size": 0,
+            "info": {
+                "id": 2055,
+                "name": "ISIN",
+                "short_title": "ISIN",
+                "title": "ISIN",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "LATNAME": {
+            "type": "string",
+            "bytes": 90,
+            "max_size": 0,
+            "info": {
+                "id": 2056,
+                "name": "LATNAME",
+                "short_title": "Англ. наименование",
+                "title": "Англ. наименование",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "REGNUMBER": {
+            "type": "string",
+            "bytes": 90,
+            "max_size": 0,
+            "info": {
+                "id": 2057,
+                "name": "REGNUMBER",
+                "short_title": "Регистрационный номер",
+                "title": "Регистрационный номер",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "SECTYPE": {
+            "type": "string",
+            "bytes": 3,
+            "max_size": 0,
+            "info": {
+                "id": 2058,
+                "name": "SECTYPE",
+                "short_title": "Тип ценной бумаги",
+                "title": "Тип ценной бумаги",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "CURRENCYID": {
+            "type": "string",
+            "bytes": 12,
+            "max_size": 0,
+            "info": {
+                "id": 2085,
+                "name": "CURRENCYID",
+                "short_title": "Валюта",
+                "title": "Валюта",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "shares",
+                "bonds",
+                "indexes"
+            ]
+        },
+        "LISTLEVEL": {
+            "type": "int32",
+            "info": {
+                "id": 4290,
+                "name": "LISTLEVEL",
+                "short_title": "Уровень листинга",
+                "title": "Уровень листинга",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "COUPONPERCENT": {
+            "type": "double",
+            "info": {
+                "id": 5414,
+                "name": "COUPONPERCENT",
+                "short_title": "Ставка купона, %",
+                "title": "Ставка купона, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "OFFERDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 5473,
+                "name": "OFFERDATE",
+                "short_title": "Дата оферты",
+                "title": "Дата Оферты",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "SETTLEDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 5486,
+                "name": "SETTLEDATE",
+                "short_title": "Дата расчетов",
+                "title": "Дата расчетов сделки",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "PREVWAPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1940,
+                "name": "PREVWAPRICE",
+                "short_title": "Средневзвешенная цена предыдущего дня, % к номиналу",
+                "title": "Средневзвешенная цена предыдущего дня, % к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "YIELDATPREVWAPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1941,
+                "name": "YIELDATPREVWAPRICE",
+                "short_title": "Доходность по оценке пред. дня",
+                "title": "Доходность по оценке пред. дня",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "COUPONVALUE": {
+            "type": "double",
+            "info": {
+                "id": 1936,
+                "name": "COUPONVALUE",
+                "short_title": "Сумма купона",
+                "title": "Сумма купона, в валюте номинала",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "NEXTCOUPON": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 1938,
+                "name": "NEXTCOUPON",
+                "short_title": "Дата окончания купона",
+                "title": "Дата окончания купона",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "ACCRUEDINT": {
+            "type": "double",
+            "info": {
+                "id": 1934,
+                "name": "ACCRUEDINT",
+                "short_title": "НКД",
+                "title": "НКД на дату расчетов, в валюте расчетов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "PREVPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1931,
+                "name": "PREVPRICE",
+                "short_title": "Последняя цена пред. дня",
+                "title": "Цена последней сделки пред. дня, % к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "MATDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 1935,
+                "name": "MATDATE",
+                "short_title": "Дата погашения",
+                "title": "Дата погашения, дд.мм.гг",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "COUPONPERIOD": {
+            "type": "int32",
+            "info": {
+                "id": 1937,
+                "name": "COUPONPERIOD",
+                "short_title": "Длительность купона",
+                "title": "Длительность купона",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "ISSUESIZE": {
+            "type": "int64",
+            "info": {
+                "id": 1939,
+                "name": "ISSUESIZE",
+                "short_title": "Объем выпуска, штук",
+                "title": "Объем выпуска, штук",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "PREVLEGALCLOSEPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1950,
+                "name": "PREVLEGALCLOSEPRICE",
+                "short_title": "Официальная цена закрытия предыдущего дня",
+                "title": "Официальная цена закрытия предыдущего дня",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "PREVADMITTEDQUOTE": {
+            "type": "double",
+            "info": {
+                "id": 1951,
+                "name": "PREVADMITTEDQUOTE",
+                "short_title": "Признаваемая котировка предыдущего дня",
+                "title": "Признаваемая котировка предыдущего дня",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "BUYBACKPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1943,
+                "name": "BUYBACKPRICE",
+                "short_title": "Цена оферты",
+                "title": "Цена оферты",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "BUYBACKDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 1944,
+                "name": "BUYBACKDATE",
+                "short_title": "Дата, к кот.рассч.доходность",
+                "title": "Дата, к которой рассчитывается доходность (если данное поле не заполнено, то \"Доходность посл.сделки\" рассчитывается к Дате погашения)",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "ISSUESIZEPLACED": {
+            "type": "int64",
+            "info": {
+                "id": 4032,
+                "name": "ISSUESIZEPLACED",
+                "short_title": "Объем в обращении",
+                "title": "Количество ценных бумаг в обращении",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "LOTVALUE": {
+            "type": "double",
+            "info": {
+                "id": 5662,
+                "name": "LOTVALUE",
+                "short_title": "Номинал лота",
+                "title": "Номинальная стоимость лота, в валюте номинала",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "NAME": {
+            "type": "string",
+            "bytes": 384,
+            "max_size": 0,
+            "info": {
+                "id": 2109,
+                "name": "NAME",
+                "short_title": "Наименование",
+                "title": "Наименование",
+                "is_ordered": 1,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "ANNUALHIGH": {
+            "type": "double",
+            "info": {
+                "id": 4254,
+                "name": "ANNUALHIGH",
+                "short_title": "Макс. за год",
+                "title": "Максимальное значение индекса за год",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "ANNUALLOW": {
+            "type": "double",
+            "info": {
+                "id": 4253,
+                "name": "ANNUALLOW",
+                "short_title": "Мин. за год",
+                "title": "Минимальное значение индекса за год",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "CALCMODE": {
+            "type": "string",
+            "bytes": 36,
+            "max_size": 0,
+            "info": {
+                "id": 4269,
+                "name": "CALCMODE",
+                "short_title": "Принцип",
+                "title": "Принцип расчета",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "LOTDIVIDER": {
+            "type": "int32",
+            "info": {
+                "id": 8581,
+                "name": "LOTDIVIDER",
+                "short_title": "Коэффициент дробления",
+                "title": "Коэффициент дробления ценной бумаги в одном стандартном лоте. Указывает на торговлю 1/LotDivider частями от LotSize.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies"
+            ]
+        },
+        "PREVSETTLEPRICE": {
+            "type": "double",
+            "info": {
+                "id": 3423,
+                "name": "PREVSETTLEPRICE",
+                "short_title": "Расчетная цена предыдущего дня",
+                "title": "Расчетная цена предыдущего дня, рублей",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "LASTTRADEDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 3421,
+                "name": "LASTTRADEDATE",
+                "short_title": "Последний торговый день",
+                "title": "Последний торговый день",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "LASTDELDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 3420,
+                "name": "LASTDELDATE",
+                "short_title": "День исполнения",
+                "title": "День исполнения",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "ASSETCODE": {
+            "type": "string",
+            "bytes": 75,
+            "max_size": 0,
+            "info": {
+                "id": 3418,
+                "name": "ASSETCODE",
+                "short_title": "Базовый актив",
+                "title": "Код базового актива",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "PREVOPENPOSITION": {
+            "type": "int64",
+            "info": {
+                "id": 5249,
+                "name": "PREVOPENPOSITION",
+                "short_title": "Открытые позиции предыдущего дня",
+                "title": "Открытые позиции предыдущего дня, контр.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "LOTVOLUME": {
+            "type": "int32",
+            "info": {
+                "id": 5383,
+                "name": "LOTVOLUME",
+                "short_title": "Объем лота",
+                "title": "К-во единиц базового актива в инструменте",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "INITIALMARGIN": {
+            "type": "double",
+            "info": {
+                "id": 5384,
+                "name": "INITIALMARGIN",
+                "short_title": "ГО, руб.",
+                "title": "Гарантийное обеспечение",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "HIGHLIMIT": {
+            "type": "double",
+            "info": {
+                "id": 5385,
+                "name": "HIGHLIMIT",
+                "short_title": "Верхний лимит",
+                "title": "Верхний лимит цены",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "LOWLIMIT": {
+            "type": "double",
+            "info": {
+                "id": 5386,
+                "name": "LOWLIMIT",
+                "short_title": "Нижний лимит",
+                "title": "Нижний лимит цены",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "STEPPRICE": {
+            "type": "double",
+            "info": {
+                "id": 5387,
+                "name": "STEPPRICE",
+                "short_title": "Стоимость шага",
+                "title": "Стоимость шага цены",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "LASTSETTLEPRICE": {
+            "type": "double",
+            "info": {
+                "id": 5457,
+                "name": "LASTSETTLEPRICE",
+                "short_title": "Расчетная предыдущего клиринга",
+                "title": "Расчетная цена предыдущего клиринга",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "FIRSTTRADEDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 5656,
+                "name": "FIRSTTRADEDATE",
+                "short_title": "Первый день",
+                "title": "Первый торговый день",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        }
+    },
+    "marketdata": {
+        "SECID": {
+            "type": "string",
+            "bytes": 36,
+            "max_size": 0,
+            "info": {
+                "id": 2060,
+                "name": "SECID",
+                "short_title": "Код инструмента",
+                "title": "Идентификатор финансового инструмента",
+                "is_ordered": 1,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "BID": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 2063,
+                "name": "BID",
+                "short_title": "Лучшая котировка на покупку",
+                "title": "Лучшая котировка на покупку, руб./% к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "BIDDEPTH": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 2064,
+                "name": "BIDDEPTH",
+                "short_title": "Объем лучшей котировки на покупку, штук",
+                "title": "Объем лучшей котировки на покупку, штук",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "OFFER": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 2065,
+                "name": "OFFER",
+                "short_title": "Лучшая котировка на продажу",
+                "title": "Лучшая котировка на продажу, руб./% к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "OFFERDEPTH": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 2066,
+                "name": "OFFERDEPTH",
+                "short_title": "Объем лучшей котировки на продажу, штук",
+                "title": "Объем лучшей котировки на продажу, штук",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "SPREAD": {
+            "type": "double",
+            "info": {
+                "id": 2088,
+                "name": "SPREAD",
+                "short_title": "Спред",
+                "title": "Разница между лучшей котировкой на продажу и покупку (спред), руб./% к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "OPEN": {
+            "type": "double",
+            "info": {
+                "id": 2067,
+                "name": "OPEN",
+                "short_title": "Цена первой сделки",
+                "title": "Цена первой сделки, руб./% к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "LOW": {
+            "type": "double",
+            "info": {
+                "id": 2069,
+                "name": "LOW",
+                "short_title": "Минимальная",
+                "title": "Минимальная цена сделки, руб./% к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "HIGH": {
+            "type": "double",
+            "info": {
+                "id": 2068,
+                "name": "HIGH",
+                "short_title": "Максимальная",
+                "title": "Максимальная цена сделки, руб./% к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "LAST": {
+            "type": "double",
+            "info": {
+                "id": 2070,
+                "name": "LAST",
+                "short_title": "Цена посл.",
+                "title": "Цена последней сделки",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2071,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "LASTCHANGE": {
+            "type": "double",
+            "info": {
+                "id": 2087,
+                "name": "LASTCHANGE",
+                "short_title": "Изменение последней, руб./% к номиналу",
+                "title": "Изменение цены последней сделки к цене предыдущей сделки, руб./% к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2087,
+                "is_signed": 1,
+                "has_percent": 1,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "LASTCHANGEPRCNT": {
+            "type": "double",
+            "info": {
+                "id": 2086,
+                "name": "LASTCHANGEPRCNT",
+                "short_title": "Изменение последней, %",
+                "title": "Изменение цены последней сделки к цене предыдущей сделки, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "QTY": {
+            "type": "int64",
+            "info": {
+                "id": 2072,
+                "name": "QTY",
+                "short_title": "Объем последней, лотов",
+                "title": "Объем последней сделки, лотов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "VALUE": {
+            "type": "double",
+            "info": {
+                "id": 2076,
+                "name": "VALUE",
+                "short_title": "Объем последней, руб.",
+                "title": "Объем последней сделки, руб.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "YIELD": {
+            "type": "double",
+            "info": {
+                "id": 2075,
+                "name": "YIELD",
+                "short_title": "Доходность пслд.сделки",
+                "title": "Доходность по последней сделке",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "VALUE_USD": {
+            "type": "double",
+            "info": {
+                "id": 2077,
+                "name": "VALUE_USD",
+                "short_title": "Объем последней, дол. США",
+                "title": "Объем последней сделки, дол. США",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "LASTTOPREVPRICE": {
+            "type": "double",
+            "info": {
+                "id": 2074,
+                "name": "LASTTOPREVPRICE",
+                "short_title": "Изменение к послдн. цене пред. дня, %",
+                "title": "Изменение цены последней сделки к последней цене предыдущего дня, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "NUMTRADES": {
+            "type": "int32",
+            "info": {
+                "id": 2081,
+                "name": "NUMTRADES",
+                "short_title": "Количество сделок",
+                "title": "Количество заключенных сделок, штук",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "VOLTODAY": {
+            "type": "int64",
+            "info": {
+                "id": 2078,
+                "name": "VOLTODAY",
+                "short_title": "Объем в сделок, бумаг",
+                "title": "Объем заключенных сделок в единицах ценных бумаг, штук",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "VALTODAY": {
+            "type": "int64",
+            "info": {
+                "id": 2079,
+                "name": "VALTODAY",
+                "short_title": "Объем",
+                "title": "Объем совершенных сделок, в валюте расчетов",
+                "is_ordered": 1,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "VALTODAY_USD": {
+            "type": "int64",
+            "info": {
+                "id": 2080,
+                "name": "VALTODAY_USD",
+                "short_title": "Объем сделок, дол. США",
+                "title": "Объем заключенных сделок, дол. США",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "BOARDID": {
+            "type": "string",
+            "bytes": 12,
+            "max_size": 0,
+            "info": {
+                "id": 2059,
+                "name": "BOARDID",
+                "short_title": "Код режима",
+                "title": "Идентификатор режима торгов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "TRADINGSTATUS": {
+            "type": "string",
+            "bytes": 3,
+            "max_size": 0,
+            "info": {
+                "id": 2062,
+                "name": "TRADINGSTATUS",
+                "short_title": "Состояние сессии",
+                "title": "Состояние торговой сессии",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "UPDATETIME": {
+            "type": "time",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 2082,
+                "name": "UPDATETIME",
+                "short_title": "Время обновления",
+                "title": "Время последнего обновления",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "time",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "LASTSETTLECODE": {
+            "type": "string",
+            "bytes": 36,
+            "max_size": 0,
+            "info": {
+                "id": 2625,
+                "name": "LASTSETTLECODE",
+                "short_title": "Код расчетов, последний",
+                "title": "Код расчётов по последней сделке",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "CHANGE": {
+            "type": "double",
+            "info": {
+                "id": 2071,
+                "name": "CHANGE",
+                "short_title": "Измен.,%",
+                "title": "Изменение цены последней сделки к цене последней сделки предыдущего торгового дня, %",
+                "is_ordered": 1,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": 2071,
+                "is_signed": 0,
+                "has_percent": 1,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "TIME": {
+            "type": "time",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 2073,
+                "name": "TIME",
+                "short_title": "Время последней",
+                "title": "Время последней",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "time",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "SEQNUM": {
+            "type": "int64",
+            "info": {
+                "id": 2083,
+                "name": "SEQNUM",
+                "short_title": "номер обновления (служебное поле)",
+                "title": "номер обновления (служебное поле)",
+                "is_ordered": 0,
+                "is_system": 1,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "SYSTIME": {
+            "type": "datetime",
+            "bytes": 19,
+            "max_size": 0,
+            "info": {
+                "id": 3166,
+                "name": "SYSTIME",
+                "short_title": "Время загрузки",
+                "title": "Время загрузки данных системой",
+                "is_ordered": 0,
+                "is_system": 1,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "futures",
+                "currencies",
+                "shares",
+                "indexes"
+            ]
+        },
+        "VALTODAY_RUR": {
+            "type": "int64",
+            "info": {
+                "id": 4306,
+                "name": "VALTODAY_RUR",
+                "short_title": "Объем, руб.",
+                "title": "Объем совершенных сделок, рублей",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "IRICPICLOSE": {
+            "type": "double",
+            "info": {
+                "id": 5390,
+                "name": "IRICPICLOSE",
+                "short_title": "Вмененная ставка",
+                "title": "Вмененная плавающая ставка (расчетное значение)",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "BEICLOSE": {
+            "type": "double",
+            "info": {
+                "id": 5394,
+                "name": "BEICLOSE",
+                "short_title": "BEI",
+                "title": "Вмененная инфляция (BEI)",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "CBRCLOSE": {
+            "type": "double",
+            "info": {
+                "id": 5466,
+                "name": "CBRCLOSE",
+                "short_title": "Вмененная Банка России",
+                "title": "Вмененная ключевая ставка Банка России (CBR)",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "YIELDTOOFFER": {
+            "type": "double",
+            "info": {
+                "id": 5468,
+                "name": "YIELDTOOFFER",
+                "short_title": "Доходность к оферте",
+                "title": "Доходность к оферте",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "YIELDLASTCOUPON": {
+            "type": "double",
+            "info": {
+                "id": 5470,
+                "name": "YIELDLASTCOUPON",
+                "short_title": "Доходность для последнего купона",
+                "title": "Доходность к погашению (оферте) для купонных облигаций с одним (последним) купонным периодом до погашения",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "TRADINGSESSION": {
+            "type": "string",
+            "bytes": 3,
+            "max_size": 0,
+            "info": {
+                "id": 6737,
+                "name": "TRADINGSESSION",
+                "short_title": "Торговая сессия",
+                "title": "Торговая сессия",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "shares",
+                "bonds",
+                "indexes"
+            ]
+        },
+        "BIDDEPTHT": {
+            "type": "int32",
+            "info": {
+                "id": 1958,
+                "name": "BIDDEPTHT",
+                "short_title": "Совокупный спрос",
+                "title": "Совокупный спрос",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "OFFERDEPTHT": {
+            "type": "int32",
+            "info": {
+                "id": 1962,
+                "name": "OFFERDEPTHT",
+                "short_title": "Общий объем на продажу",
+                "title": "Общий объем котировок на продажу, лотов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "WAPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1979,
+                "name": "WAPRICE",
+                "short_title": "Срвзв. цена, %",
+                "title": "Средневзвешенная цена, % к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "LASTCNGTOLASTWAPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1970,
+                "name": "LASTCNGTOLASTWAPRICE",
+                "short_title": "Изменение к средневзвешенной цене",
+                "title": "Изменение цены последней сделки к средневзвешенной цене, % к номиналу.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "WAPTOPREVWAPRICEPRCNT": {
+            "type": "double",
+            "info": {
+                "id": 1980,
+                "name": "WAPTOPREVWAPRICEPRCNT",
+                "short_title": "Изменение срвзв. к срвзв. пред. дня, %",
+                "title": "Изменение средневзвешенной цены относительно средневзвешенной цены предыдущего торгового дня, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "WAPTOPREVWAPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1981,
+                "name": "WAPTOPREVWAPRICE",
+                "short_title": "Изменение срвзв. к срвзв. пред. дня",
+                "title": "Изменение средневзвешенной цены к средневзвешенной цене предыдущего торгового дня, % к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "YIELDATWAPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1993,
+                "name": "YIELDATWAPRICE",
+                "short_title": "Доходность по срвзв.",
+                "title": "Доходность по средневзвешенной цене, % годовых",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "YIELDTOPREVYIELD": {
+            "type": "double",
+            "info": {
+                "id": 2649,
+                "name": "YIELDTOPREVYIELD",
+                "short_title": "Изменение доходности",
+                "title": "Изменение доходности по средневзвешенной к доходности по средневзвешенной цене предыдущего дня, % годовых",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "CLOSEYIELD": {
+            "type": "double",
+            "info": {
+                "id": 1994,
+                "name": "CLOSEYIELD",
+                "short_title": "Доходность по закрытию",
+                "title": "Доходность по закрытию",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "CLOSEPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1986,
+                "name": "CLOSEPRICE",
+                "short_title": "Закрытие",
+                "title": "Закрытие",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "MARKETPRICETODAY": {
+            "type": "double",
+            "info": {
+                "id": 1990,
+                "name": "MARKETPRICETODAY",
+                "short_title": "Рыночная цена",
+                "title": "Рыночная цена, % к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "MARKETPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1989,
+                "name": "MARKETPRICE",
+                "short_title": "Рыночная цена пред. дня",
+                "title": "Рыночная цена предыдущего дня, % к номиналу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "DURATION": {
+            "type": "double",
+            "info": {
+                "id": 1995,
+                "name": "DURATION",
+                "short_title": "Дюрация, дней",
+                "title": "Дюрация, дней",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds"
+            ]
+        },
+        "NUMBIDS": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 1959,
+                "name": "NUMBIDS",
+                "short_title": "Заявок на покупку",
+                "title": "Заявок на покупку",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "NUMOFFERS": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 1963,
+                "name": "NUMOFFERS",
+                "short_title": "Заявок на продажу",
+                "title": "Заявок на продажу",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares",
+                "futures"
+            ]
+        },
+        "HIGHBID": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 1982,
+                "name": "HIGHBID",
+                "short_title": "Наибольшая цена спроса",
+                "title": "Наибольшая цена спроса в течение торговой сессии",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "LOWOFFER": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 1983,
+                "name": "LOWOFFER",
+                "short_title": "Наименьшая цена предложения",
+                "title": "Наименьшая цена предложения в течение торговой сессии",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "PRICEMINUSPREVWAPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1985,
+                "name": "PRICEMINUSPREVWAPRICE",
+                "short_title": "К оценке пред. дня",
+                "title": "К оценке пред. дня",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "LASTBID": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 1987,
+                "name": "LASTBID",
+                "short_title": "Спрос сессии",
+                "title": "Спрос сессии",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "LASTOFFER": {
+            "type": "undefined",
+            "bytes": 0,
+            "max_size": 0,
+            "info": {
+                "id": 1988,
+                "name": "LASTOFFER",
+                "short_title": "Предложение сессии",
+                "title": "Предложение сессии",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "LCURRENTPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1997,
+                "name": "LCURRENTPRICE",
+                "short_title": "Текущая цена",
+                "title": "Текущая цена",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "LCLOSEPRICE": {
+            "type": "double",
+            "info": {
+                "id": 1998,
+                "name": "LCLOSEPRICE",
+                "short_title": "Цена закрытия",
+                "title": "Цена закрытия",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "MARKETPRICE2": {
+            "type": "double",
+            "info": {
+                "id": 1999,
+                "name": "MARKETPRICE2",
+                "short_title": "Рыночная цена 2",
+                "title": "Рыночная цена 2",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "ADMITTEDQUOTE": {
+            "type": "double",
+            "info": {
+                "id": 2000,
+                "name": "ADMITTEDQUOTE",
+                "short_title": "Призн. котир., %",
+                "title": "Признаваемая котировка, % от номинала",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies",
+                "bonds",
+                "shares"
+            ]
+        },
+        "OPENPERIODPRICE": {
+            "type": "double",
+            "info": {
+                "id": 2001,
+                "name": "OPENPERIODPRICE",
+                "short_title": "Цена предторгового периода",
+                "title": "Цена предторгового периода",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "bonds",
+                "shares"
+            ]
+        },
+        "LASTVALUE": {
+            "type": "double",
+            "info": {
+                "id": 2095,
+                "name": "LASTVALUE",
+                "short_title": "Предыдущее закрытие",
+                "title": "Последнее значение индекса предыдущего торгового дня.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "OPENVALUE": {
+            "type": "double",
+            "info": {
+                "id": 2097,
+                "name": "OPENVALUE",
+                "short_title": "Открытие",
+                "title": "Открытие текущего торгового дня, пунктов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "CURRENTVALUE": {
+            "type": "double",
+            "info": {
+                "id": 2091,
+                "name": "CURRENTVALUE",
+                "short_title": "Значение",
+                "title": "Текущее значение",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2098,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "LASTCHANGETOOPENPRC": {
+            "type": "double",
+            "info": {
+                "id": 2637,
+                "name": "LASTCHANGETOOPENPRC",
+                "short_title": "К открытию, %",
+                "title": "Изменение к открытию текущего торгового дня, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2637,
+                "is_signed": 1,
+                "has_percent": 1,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "LASTCHANGETOOPEN": {
+            "type": "double",
+            "info": {
+                "id": 2636,
+                "name": "LASTCHANGETOOPEN",
+                "short_title": "К открытию, пунктов",
+                "title": "Изменение к открытию текущего торгового дня, пунктов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2636,
+                "is_signed": 1,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "LASTCHANGEPRC": {
+            "type": "double",
+            "info": {
+                "id": 2098,
+                "name": "LASTCHANGEPRC",
+                "short_title": "Изменение к закрытию,%",
+                "title": "Изменение текущего значения к значению предыдущего торгового дня, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2098,
+                "is_signed": 1,
+                "has_percent": 1,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "MONTHCHANGEPRC": {
+            "type": "double",
+            "info": {
+                "id": 2110,
+                "name": "MONTHCHANGEPRC",
+                "short_title": "Изм. с начала месяца, %",
+                "title": "Изменение с начала календарного месяца, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2110,
+                "is_signed": 1,
+                "has_percent": 1,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "YEARCHANGEPRC": {
+            "type": "double",
+            "info": {
+                "id": 2111,
+                "name": "YEARCHANGEPRC",
+                "short_title": "Изм. с начала года, %",
+                "title": "Изменение с начала календарного года",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 2111,
+                "is_signed": 1,
+                "has_percent": 1,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "LASTCHANGEBP": {
+            "type": "double",
+            "info": {
+                "id": 3083,
+                "name": "LASTCHANGEBP",
+                "short_title": "Изм.к закр., б.п.",
+                "title": "Изменение текущего значения к значению предыдущего торгового дня, базисных пунктов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 3083,
+                "is_signed": 1,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "MONTHCHANGEBP": {
+            "type": "double",
+            "info": {
+                "id": 3192,
+                "name": "MONTHCHANGEBP",
+                "short_title": "Изм. с начала месяца, б.п.",
+                "title": "Изменение с начала календарного месяца, базисных пунктов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 3192,
+                "is_signed": 1,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "YEARCHANGEBP": {
+            "type": "double",
+            "info": {
+                "id": 3193,
+                "name": "YEARCHANGEBP",
+                "short_title": "Изм. с начала года, б.п.",
+                "title": "Изменение с начала календарного года, базисных пунктов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 3193,
+                "is_signed": 1,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "CAPITALIZATION": {
+            "type": "double",
+            "info": {
+                "id": 4255,
+                "name": "CAPITALIZATION",
+                "short_title": "Капитализация, руб",
+                "title": "Капитализация бумаг, входящих в индекс, руб",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "CAPITALIZATION_USD": {
+            "type": "double",
+            "info": {
+                "id": 4271,
+                "name": "CAPITALIZATION_USD",
+                "short_title": "Капитализация, в дол. США",
+                "title": "Капитализация бумаг, входящих в индекс, в дол. США",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes"
+            ]
+        },
+        "TRADEDATE": {
+            "type": "date",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 3795,
+                "name": "TRADEDATE",
+                "short_title": "Дата",
+                "title": "Дата торгов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "date",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "indexes",
+                "futures"
+            ]
+        },
+        "LOPENPRICE": {
+            "type": "double",
+            "info": {
+                "id": 8583,
+                "name": "LOPENPRICE",
+                "short_title": "Оценка с 10:00 до 11:30",
+                "title": "Средневзвешенная цена сделок, заключенных в период с 10:00 до 11:30",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "currencies"
+            ]
+        },
+        "ETFSETTLEPRICE": {
+            "type": "double",
+            "info": {
+                "id": 4033,
+                "name": "ETFSETTLEPRICE",
+                "short_title": "Расч. стоим",
+                "title": "Расчетная стоимость акции/пая иностранного биржевого инвестиционного фонда",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "shares"
+            ]
+        },
+        "CLOSINGAUCTIONPRICE": {
+            "type": "double",
+            "info": {
+                "id": 3811,
+                "name": "CLOSINGAUCTIONPRICE",
+                "short_title": "Цена ПА",
+                "title": "Цена послеторгового аукциона. В течение аукциона отображает ожидаемую цену аукциона с учетом всех зарегистрированных на текущий момент заявок. После завершения аукциона отображает цену состоявшегося аукциона.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "shares"
+            ]
+        },
+        "CLOSINGAUCTIONVOLUME": {
+            "type": "double",
+            "info": {
+                "id": 3810,
+                "name": "CLOSINGAUCTIONVOLUME",
+                "short_title": "Количество ПА",
+                "title": "Количество в сделках послеторгового аукциона. Ожидаемое (состоявшееся) количество лотов в сделках по указанной цене послеторгового аукциона.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "shares"
+            ]
+        },
+        "ISSUECAPITALIZATION": {
+            "type": "double",
+            "info": {
+                "id": 3814,
+                "name": "ISSUECAPITALIZATION",
+                "short_title": "Капитализация",
+                "title": "Текущая капитализация акции",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "shares"
+            ]
+        },
+        "ISSUECAPITALIZATION_UPDATETIME": {
+            "type": "time",
+            "bytes": 10,
+            "max_size": 0,
+            "info": {
+                "id": 3815,
+                "name": "ISSUECAPITALIZATION_UPDATETIME",
+                "short_title": "Обновление капитализации",
+                "title": "Время обновления капитализации",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 1,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "time",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "shares"
+            ]
+        },
+        "ETFSETTLECURRENCY": {
+            "type": "string",
+            "bytes": 18,
+            "max_size": 0,
+            "info": {
+                "id": 4234,
+                "name": "ETFSETTLECURRENCY",
+                "short_title": "Валюта расч. стоим",
+                "title": "Валюта расчетной стоимости акции/пая иностранного биржевого инвестиционного фонда",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "string",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "shares"
+            ]
+        },
+        "QUANTITY": {
+            "type": "int32",
+            "info": {
+                "id": 3447,
+                "name": "QUANTITY",
+                "short_title": "Контрактов в последней",
+                "title": "Объем последней сделки, контрактов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "SETTLEPRICE": {
+            "type": "double",
+            "info": {
+                "id": 3450,
+                "name": "SETTLEPRICE",
+                "short_title": "Текущая расчетная",
+                "title": "Текущая расчетная цена",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 3452,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "SETTLETOPREVSETTLE": {
+            "type": "double",
+            "info": {
+                "id": 3451,
+                "name": "SETTLETOPREVSETTLE",
+                "short_title": "Изм. расчетной",
+                "title": "Изменение текущей расчетной цены",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 3451,
+                "is_signed": 1,
+                "has_percent": 0,
+                "type": "number",
+                "precision": null,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "OPENPOSITION": {
+            "type": "double",
+            "info": {
+                "id": 3446,
+                "name": "OPENPOSITION",
+                "short_title": "Позиций",
+                "title": "Открытые позиции, контрактов",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "SETTLETOPREVSETTLEPRC": {
+            "type": "double",
+            "info": {
+                "id": 3452,
+                "name": "SETTLETOPREVSETTLEPRC",
+                "short_title": "Изм. расчетной цены, %",
+                "title": "Изменение текущей расчетной цены относительно расчетной цены предыдущего торгового дня, %",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": 3452,
+                "is_signed": 0,
+                "has_percent": 1,
+                "type": "number",
+                "precision": 2,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        },
+        "OICHANGE": {
+            "type": "int64",
+            "info": {
+                "id": 5250,
+                "name": "OICHANGE",
+                "short_title": "Изменение открытых позиций",
+                "title": "Изменение открытых позиций к предыдущему закрытию, контр.",
+                "is_ordered": 0,
+                "is_system": 0,
+                "is_hidden": 0,
+                "trend_by": null,
+                "is_signed": 0,
+                "has_percent": 0,
+                "type": "number",
+                "precision": 0,
+                "is_linked": 0
+            },
+            "LOADIN": [
+                "futures"
+            ]
+        }
+    }
+}
