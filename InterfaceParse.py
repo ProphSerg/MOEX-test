@@ -11,7 +11,7 @@ Interface = {}
         Каждая строка таблицы соответствует уникальной паре режим торгов - финансовый инструмент.<p>
         <table
 '''
-pTbl = re.compile(r'<a name="t.+?<h4>(\w+) - (.+?)</h4>.*?<ul>(.+?)<p>\s*(<table.*?>(.+?)</table>|.+?<br>).*?<table.*?>(.+?)</table>.*?</ul>', flags=re.MULTILINE)
+pTbl = re.compile(r'<a name="t.+?<h4>(\w+) - (.+?)</h4>.*?(<ul>.+?)\s*?(<table.*?>(.+?)</table>|Входных полей нет<br>).*?<table.*?>(.+?)</table>.*?</ul>', flags=re.MULTILINE)
 #pRC = re.compile(r'<tr.*?>(<td.*?>(.+?)</td>)+?</tr>')
 pRow = re.compile(r'<tr.*?>(.*?)</tr>')
 pCol = re.compile(r'<td.*?>(.*?)</td>')
