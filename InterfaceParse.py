@@ -15,6 +15,7 @@ pTbl = re.compile(r'<a name="t.+?<h4>(\w+) - (.+?)</h4>.*?(<ul>.+?)\s*?(<table.*
 #pRC = re.compile(r'<tr.*?>(<td.*?>(.+?)</td>)+?</tr>')
 pRow = re.compile(r'<tr.*?>(.*?)</tr>')
 pCol = re.compile(r'<td.*?>(.*?)</td>')
+pDsc = re.compile(r'<ul>\s*?(.+?)\s*?<p>')
 
 for root, dir, files in os.walk('.'):
     for file in files:
@@ -33,8 +34,10 @@ for root, dir, files in os.walk('.'):
             Interface[Iver][Imrk][r[0]] = {
                 'output': list(map(lambda x: list(map(str.strip, pCol.findall(x))), rr[1:])),
                 'title': r[1].strip(),
-                'desc': r[2].strip()
             }
+
+            rr = pDsc.search(r[2])
+            if rr: Interface[Iver][Imrk][r[0]].update({'desc': rr[1].strip()})
 
             if len(r[4]) > 0:
                 rr = pRow.findall(r[4])
